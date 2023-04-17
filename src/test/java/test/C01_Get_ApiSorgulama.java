@@ -19,10 +19,8 @@ public class C01_Get_ApiSorgulama {
 
     @Test
     public void get01(){
-        // 1 - Gonderecegimiz Request icin gerekli olan URL ve ihtiyacimiz varsa Request Body hazirla
-        // 2 - Eger soruda bize verilmisse Expected Data hazirla
-        // 3 - Bize donen Response'i Actual Data olarak kaydet
-        // 4 - Expected Data ile Actual Datayi karsilastirmamiz yani Assertion yapmamiz gerek
+
+
 
         // 1 - Gonderecegimiz Request icin gerekli olan URL ve ihtiyacimiz varsa Request Body hazirla
         String url = "https://restful-booker.herokuapp.com/booking/10";

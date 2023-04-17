@@ -39,7 +39,11 @@ public class C06_Post_ResponseBodyTesti {
         System.out.println(reqBody);
         //2- Expectet hazirla
         //3- Response' kaydet
-        Response response=given().contentType("application/json").when().body(reqBody.toString()).post(url);
+        Response response=given()
+                              .contentType("application/json")
+                         .when()
+                               .body(reqBody.toString())
+                         .post(url);
 
         //4-Assertion
         response.then()

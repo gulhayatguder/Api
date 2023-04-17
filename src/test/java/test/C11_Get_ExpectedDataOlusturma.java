@@ -7,6 +7,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import static io.restassured.RestAssured.given;
+import static org.junit.Assert.assertEquals;
 
 public class C11_Get_ExpectedDataOlusturma {
     /* https://jsonplaceholder.typicode.com/posts/22 url'ine bir GET request
@@ -46,10 +47,17 @@ um mollitia molestiae aut atque rem suscipit\nnam impedit esse"
                   //NOT:Dönen response'nin body'si ile islem yapmak
                   // istiyorsak bunu JSONPath objesine donusturmemiz gerekir
         JsonPath resJSPath=response.jsonPath();
-        Assert.assertEquals(expbody.get("userId"),resJSPath.get("userId"));
+       /* Assert.assertEquals(expbody.get("userId"),resJSPath.get("userId"));
         Assert.assertEquals(expbody.get("id"),resJSPath.get("id"));
         Assert.assertEquals(expbody.get("title"),resJSPath.get("title"));
         Assert.assertEquals(expbody.get("body"),resJSPath.get("body"));
+
+       ==============>NOT: Assert'ler jUnit ten import ederek silinebilir*/
+
+        assertEquals(expbody.get("userId"),resJSPath.get("userId"));
+        assertEquals(expbody.get("id"),resJSPath.get("id"));
+        assertEquals(expbody.get("title"),resJSPath.get("title"));
+        assertEquals(expbody.get("body"),resJSPath.get("body"));
 
     }
 }

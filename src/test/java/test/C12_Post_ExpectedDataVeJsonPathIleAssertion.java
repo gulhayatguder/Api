@@ -27,7 +27,7 @@ public class C12_Post_ExpectedDataVeJsonPathIleAssertion {
                                           },
                         "additionalneeds" : "wi-fi"
                     }
-                        Response Body
+                        Response Body============>Expected body
                    {
                     "bookingid":24,
                     "booking":{

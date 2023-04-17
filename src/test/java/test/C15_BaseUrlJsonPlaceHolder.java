@@ -64,7 +64,7 @@ public class C15_BaseUrlJsonPlaceHolder extends JsonPlaceHolderBaseURL {
 
     }
     @Test
-    public void get03(){
+    public void delete01(){
 /*
         3- https://jsonplaceholder.typicode.com/posts/50 endpointine bir DELETE
             request gonderdigimizde donen response’un status code’unun 200 oldugunu ve
@@ -76,10 +76,12 @@ public class C15_BaseUrlJsonPlaceHolder extends JsonPlaceHolderBaseURL {
 
         //2-Expectet data
         //3-Response'i hazirla
-        Response response=given().spec(specJsonPlace).when().get("/{pp1}/{pp2}");
+        Response response=given().spec(specJsonPlace).when().delete("/{pp1}/{pp2}");
         response.prettyPrint();
         //4-Assertions
-        response.then().assertThat().statusCode(200).body(Matchers.nullValue());
+        response.then().assertThat().statusCode(200).body("id",Matchers.nullValue());
+
+
     }
 
 }
