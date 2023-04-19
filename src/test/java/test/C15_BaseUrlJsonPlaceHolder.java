@@ -35,7 +35,7 @@ public class C15_BaseUrlJsonPlaceHolder extends JsonPlaceHolderBaseURL {
         */
 
         //1_Url hazirlama(Path parametreleri)
-        specJsonPlace.pathParams("pp1","pp2");
+        specJsonPlace.pathParams("pp1","posts");
 
         //2-Expectet data
         //3-Response'i hazirla
