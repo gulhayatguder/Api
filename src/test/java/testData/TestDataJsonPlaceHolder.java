@@ -6,11 +6,13 @@ import java.util.HashMap;
 
 public class TestDataJsonPlaceHolder {
 
-    public int basariliStatusCode = 200;
-    public String contentType = "application/json; charset=utf-8";
-    public String connectionHeaderDegeri = "keep-alive";
 
-    public JSONObject expectedBodyOlusturJson(){
+
+        public int basariliStatusCode = 200;
+        public String contentType = "application/json; charset=utf-8";
+        public String connectionHeaderDegeri = "keep-alive";
+
+        public JSONObject expectedBodyOlusturJson(){
 
         /*
         {
@@ -22,17 +24,17 @@ public class TestDataJsonPlaceHolder {
         }
          */
 
-        JSONObject expBody = new JSONObject();
+            JSONObject expBody = new JSONObject();
 
-        expBody.put("userId",3);
-        expBody.put("id",22);
-        expBody.put("title","dolor sint quo a velit explicabo quia nam");
-        expBody.put("body","eos qui et ipsum ipsam suscipit aut\nsed omnis non odio\nexpedita earum mollitia molestiae aut atque rem suscipit\nnam impedit esse");
+            expBody.put("userId",3);
+            expBody.put("id",22);
+            expBody.put("title","dolor sint quo a velit explicabo quia nam");
+            expBody.put("body","eos qui et ipsum ipsam suscipit aut\nsed omnis non odio\nexpedita earum mollitia molestiae aut atque rem suscipit\nnam impedit esse");
 
-        return expBody;
-    }
+            return expBody;
+        }
 
-    public HashMap reqBodyOlusturMap(){
+        public HashMap reqBodyOlusturMap(){
         /*
         {
         "title":"Ahmet",
@@ -42,15 +44,16 @@ public class TestDataJsonPlaceHolder {
         }
          */
 
-        HashMap <String,Object> reqBody = new HashMap<>();
+            HashMap <String,Object> reqBody = new HashMap<>();
 
-        reqBody.put("title","Ahmet");
-        reqBody.put("body","Merhaba");
-        reqBody.put("userId",10.0);
-        reqBody.put("id",70.0);
+            reqBody.put("title","Ahmet");
+            reqBody.put("body","Merhaba");
+            reqBody.put("userId",10.0);
+            reqBody.put("id",70.0);
 
-        return reqBody;
+            return reqBody;
+        }
+
+
     }
 
-
-}
